@@ -17,7 +17,11 @@ class RectangleButtonWidget extends StatelessWidget {
         height: 40,
         color: Color(0xFF00B18D),
         alignment: Alignment.center,
-        child: Text(buttonText, style: TextStyle(color: Colors.white)),
+        child: Text(buttonText,
+            style: TextStyle(
+              color: Colors.white,
+              fontWeight: FontWeight.bold,
+            )),
       ),
     );
   }
