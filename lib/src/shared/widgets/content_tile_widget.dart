@@ -4,7 +4,7 @@ import 'package:intl/intl.dart';
 /// A tile to represent a given content.
 ///
 /// With exception of [trailing], all arguments are mandatory and must not be `null`.
-class ContentTile extends StatelessWidget {
+class ContentTileWidget extends StatelessWidget {
   /// The color of the color indicator at the left.
   final Color leadingColor;
 
@@ -22,7 +22,7 @@ class ContentTile extends StatelessWidget {
   /// it's height is greater than [ContentTile]'s height.
   final Widget trailing;
 
-  const ContentTile({
+  const ContentTileWidget({
     Key key,
     @required this.leadingColor,
     @required this.text,
@@ -36,7 +36,7 @@ class ContentTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 64,
+      color: Colors.white,
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
