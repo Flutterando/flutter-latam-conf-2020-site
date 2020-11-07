@@ -1,0 +1,12 @@
+{
+  "Post": {
+    "title": "String",
+    "views": "Int",
+    "published": "Boolean",
+    "comments": "Comment[]"
+  },
+  "Comment": {
+    "body": "String",
+    "post": "Post"
+  }
+}
